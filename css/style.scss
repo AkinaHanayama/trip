@@ -1,0 +1,249 @@
+@charset "UTF-8";
+a{
+    text-decoration:none;
+}
+li{
+    list-style:none;
+    font-size: 15px;
+    line-height:1.6em;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+*{
+    box-sizing:border-box;
+}
+.container{
+    max-width:750px;
+    margin:0 auto;
+}
+img{
+    width: 100%;
+}
+h2{
+    font-size: 25px;
+    line-height:1.6em;
+    margin: 20px 0;
+    font-family:'Hannari','Noto Serif JP', serif;
+}
+p{
+    line-height:1.6em;
+}
+span{
+    color:#50539B;
+}
+.left{
+    transform:translateX(-30px);
+    opacity:0;  
+    transition:opacity 2s,transform 4s;
+}
+.right{
+    transform:translate(20px,0);
+    opacity:0; 
+    transition:opacity 2s,transform 4s;
+
+}
+.left-fadein{
+    opacity:1;
+    transform:translateX(10px); 
+}
+.right-fadein{
+    opacity:1;
+    transform:translate(-10px, 0); 
+    margin-left: 20px;
+}
+/*パララックスでの画面のズレの調整*/
+#wrap{
+    width: 100%;
+    overflow:hidden;
+}
+/*ズレの調整ここまで*/
+.order{
+    a{
+        height: 10vh;
+        line-height: 10vh;
+        background-color: rgba(7, 186, 61,1);
+        text-align: center;
+        color: #fff;
+        display: block;
+        margin-top: 30px;
+        margin-bottom: 50px;
+        font-size: 1.5em;
+        margin-left: 20px;
+        margin-right: 20px;
+        box-shadow: 0 1px 8px rgb(0,0,1);
+        transition: 0.8s;
+    }  
+}
+.pc-img{
+    display: none;
+}
+.block{
+    padding:20px 0;
+    &__color{
+        color:#727171;
+    }
+}
+.color{
+    color:#727171;
+}
+.border-bottom{
+    border-bottom:1px dotted;
+    padding-bottom: 20px!important;
+    &__explain{
+        line-height:1.6em;
+    }
+    &__texture{
+        background-color:#F1E1AE;
+        padding: 2%;
+        margin-top: 10px;
+        border-radius:15px;
+    }
+    &__item-img{
+        display: block;
+        width: 35vw;
+        margin:0 auto;
+    }
+    &__img{
+        width: 40vw;
+        display: block;
+        margin:10px auto;
+    }
+}
+.margin-top{
+    margin-top: 30px;
+}
+.padding-lr{
+    padding: 0 20px;
+}
+.background-color{
+    padding: 8px;
+    background-color:#E8E8EA;
+    width: 100px;
+    border-radius:15px;
+    margin-bottom: 10px;
+}
+.woman{
+    width: 40vw;
+    display: block;
+    margin:0 auto;
+} 
+.price-term{
+    margin: 15px 0;
+    &__volume{
+        font-size: 20px;
+        color:#50539B;
+    }
+}
+.item-texture{
+    font-size: 12px;
+}
+.item-img{
+    width: 90vw;
+}
+.exmargin-top{
+    margin-top: 80px;
+}
+.woman1{
+    width: 70vw;
+    display: block;
+    margin:0 auto;
+}
+.item-img1{
+    width: 88vw;             
+}
+.smmargin-top{
+    margin-top: 20px;
+    display: block;
+}
+@media screen and (min-width:768px) { 
+    h2{
+        font-size: 29px!important;
+    }
+    p{
+        font-size: 20px;
+    }
+    li{
+        font-size: 20px;
+    }
+    .container{
+        margin:0 auto;
+    }
+    .block{
+        &__color{
+            font-size: 20px;
+        }
+    }
+    .background-color{
+        width: 118px;
+    }
+    .border-bottom{
+        &__item-img{
+            width: 200px;
+            margin-top: 10px;
+        }
+        &__img{
+            width: 200px;
+        }
+    }
+    .woman{
+        width: 200px;
+    }
+    .item-texture{
+        font-size: 15px;
+    }
+    .item-img{
+        width: 600px;
+    }
+    .item-img1{
+        width: 600px;             
+    }
+    .woman1{
+        width: 400px;
+    }
+}
+@media screen and (min-width:1024px) { 
+    .pc-img{
+        display: block;
+    }
+    .smart-img{
+        display: none;
+    }
+    .flex-box{
+        display: flex;
+        justify-content:space-around;
+        ul{
+            width: 420px;
+        }
+    }
+    .border-bottom{
+        &__item-img{
+            width: 190px;
+            object-fit:cover;
+        }
+        &__img{
+            width: 200px;
+        }
+        &__explain{
+            width: 720px!important;
+        }
+        p{
+            width: 450px;
+        }
+        
+    }
+    .woman{
+        width: 200px;
+        height:240px;
+        object-fit:cover;
+        margin: 0;
+    }
+    .item-img{
+        width: 650px;
+    }
+    .woman1{
+        width: 400px;
+    }
+    .item-img1{
+        width: 600px;
+    }
+}
