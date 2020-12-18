@@ -120,5 +120,39 @@ footer p {
 footer a {
     color:#0066c0;
 }
+/*パララックス*/
+.startleft {
+  -webkit-transform: translateX(-50px);
+          transform: translateX(-50px);
+  opacity: 0;
+  -webkit-transition: opacity 2s,-webkit-transform 3s;
+  transition: opacity 2s,-webkit-transform 3s;
+  transition: opacity 2s,transform 3s;
+  transition: opacity 2s,transform 3s,-webkit-transform 3s;
+}
+
+.startright {
+  -webkit-transform: translate(20px, 0);
+          transform: translate(20px, 0);
+  opacity: 0;
+  -webkit-transition: opacity 2s,-webkit-transform 3s;
+  transition: opacity 2s,-webkit-transform 3s;
+  transition: opacity 2s,transform 3s;
+  transition: opacity 2s,transform 3s,-webkit-transform 3s;
+}
+
+.left-fadein {
+  opacity: 1;
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+}
+
+.rightfadein {
+  opacity: 1;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+/*ここまでパララックス*/
 
 
